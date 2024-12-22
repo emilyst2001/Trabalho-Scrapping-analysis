@@ -1,6 +1,7 @@
 # Web Scraping e Análise de Dados das Últimas Postagens da Scientific American
 
-**Aluna:** Emily
+**Aluna:** Emily Sato
+**RA:** 770567
 
 ## 📚 Descrição do Projeto
 
