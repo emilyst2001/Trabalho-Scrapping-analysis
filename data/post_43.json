@@ -1,0 +1,15 @@
+{
+    "title": "Math Puzzle: Move the Tower",
+    "link": "https://www.scientificamerican.com/article/math-puzzle-move-the-tower/",
+    "category": "Mathematics",
+    "date": "December 17, 2024",
+    "summary": "Transport the disks in this math puzzle",
+    "authors": "Heinrich Hemme",
+    "date_pub": "December 14, 2024",
+    "read_time": null,
+    "type": null,
+    "full_text": "French mathematician Édouard Lucas was born in Amiens in 1842 and died in Paris 49 years later. He wrote the four-volume workRecréations Mathématiques, which became a classic of recreational mathematics. In 1883, under the pseudonym “N. Claus de Siam” (an anagram of “Lucas d’Amiens”), he marketed a solitaire game that he called the Tower of Hanoi.\nHe claimed that the game was a simplified version of the so-called Tower of Brahma. In this supposed legend, monks had to move a tower made of 64 golden disks in a great temple. Before they could complete this task, however, the temple would crumble to dust, and the end of the world would arrive.\nThe Tower of Hanoi consists of a small board on which three identical cylindrical rods are mounted. On the left rod there are five disks of different sizes with a hole in the middle. They are ordered by size, with the largest disk at the bottom. The goal of the game is to move all the disks from the left rod to the right rod in as few moves as possible. In each move, only one disk can be taken from one rod and placed on another rod, and a larger disk can never be placed on a smaller disk. How many and which moves are necessary to transport the disks?\nAmanda Montañez\nWe replace the disks with numbers according to size. Now we build the solution systematically, starting with a tower with only one disk. The solution is trivial. With one move you transport the single disk from left to right.\nAmanda Montañez\nFor a tower with two disks you first move disk 1 from left to middle, then disk 2 from left to right and finally disk 1 from middle to right. So you need 3 = 22– 1 moves.\nAmanda Montanez\nFor a tower with three disks we first mentally leave disk 3 out. This reduces the problem to the task with only two disks, which we now transport from left to middle with three moves. With a fourth move we then transport disk 3 three from left to right. Now we mentally leave disk 3 out again and again transport the two disks from middle to right with three moves. In total this consists of 3 + 1 + 3 = 7 = 23– 1 moves.\nAmanda Montañez\nThe problem of the tower with four disks can be reduced in a very analogous way to that of the tower with three disks. Therefore, you need 7 + 1 + 7 = 15 = 24– 1 moves. Finally, for the tower with five disks, you need 15 + 1 + 15 = 31 = 25– 1 moves. In general, you need 2n– 1 moves for a tower withndisks. The original game by Édouard Lucas had eight disks.\nWe’d love to hear from you! E-mail us atgames@sciam.comto share your experience.\nThis puzzle originally appeared inSpektrum der Wissenschaftand was reproduced with permission.",
+    "authors_names": "Heinrich Hemme",
+    "difficulty": null,
+    "sentiment": null
+}
