@@ -5,7 +5,7 @@
 
 ## 📚 Descrição do Projeto
 
-Este projeto tem como objetivo **extrair** e **analisar** dados das diversas últimas postagens do site [Scientific American](https://www.scientificamerican.com/). Utilizando técnicas avançadas de web scraping, conseguimos coletar informações detalhadas sobre os artigos publicados recentemente, armazenando-os em formato JSON na pasta `data`. Posteriormente, realizamos uma análise aprofundada desses dados em um notebook Jupyter, gerando visualizações que destacam tendências, características e insights valiosos sobre o conteúdo divulgado pelo site.
+Este projeto tem como objetivo **extrair** e **analisar** dados das diversas últimas postagens do site [Scientific American](https://www.scientificamerican.com/). Utilizando técnicas avançadas de web scraping, conseguimos coletar informações detalhadas sobre os artigos publicados recentemente, armazenando-os em formato JSON na pasta `data`. Posteriormente, realizamos uma análise aprofundada desses dados em um notebook Jupyter, gerando visualizações que destacam tendências, características e insights sobre o conteúdo divulgado pelo site.
 
 ## 🚀 Tecnologias e Ferramentas Utilizadas
 
@@ -109,7 +109,7 @@ Utilizamos `pandas` para organizar os dados em DataFrames, facilitando a anális
 ## 🧩 Desafios Enfrentados
 
 ### 1. **Estrutura Variável das Páginas**
-Uma das principais dificuldades foi lidar com a inconsistência na estrutura HTML das páginas e dos artigos individuais. Alguns elementos não estavam sempre presentes ou tinham classes dinâmicas, exigindo implementações robustas com tratamentos de exceções.
+Uma das principais dificuldades foi lidar com a inconsistência na estrutura HTML das páginas e dos artigos individuais. Alguns elementos não estavam sempre presentes ou tinham classes dinâmicas, exigindo implementações com tratamentos de exceções.
 
 ### 2. **Decodificação de JSON Incorporado**
 Muitos artigos incorporavam dados em scripts JSON dentro do HTML. Inicialmente, enfrentamos erros de decodificação devido a caracteres especiais e formatações inconsistentes. Foi necessário aplicar expressões regulares (`re`) para limpar e preparar os dados antes da conversão.
@@ -180,7 +180,7 @@ A extração e limpeza do texto completo dos artigos demandou atenção para rem
 
 ![Nuvem de Palavras - Resumos](data/8.png)
 
-- **Observação**: Termos como "science", "health", "climate" são predominantes.
+- **Observação**: Termos como "science", "climate", "system", "Earth" são predominantes.
 - **Insight**: Os artigos abordam amplamente temas científicos e de relevância global.
 
 ### 8. **Modelagem de Tópicos (LDA)**
@@ -207,7 +207,7 @@ says earth planet scientists years like stars life space new star way care peopl
 
 1. **Nível de Escrita e Extensão**:
    - Predominância de artigos com dificuldade "easy" e tempo de leitura entre 2 e 6 minutos, indicando uma abordagem acessível e voltada para um público amplo.
-   - Presença de artigos mais longos e "hard" sugere diversidade no conteúdo, atendendo também a leitores mais especializados.
+   - Presença de artigos mais longos e "hard" sugere diversidade no conteúdo, atendendo também a leitores mais dedicados.
 
 2. **Sentimento**:
    - A maioria dos artigos apresenta um sentimento "neutral", alinhado com a natureza científica e informativa da publicação.
@@ -215,21 +215,21 @@ says earth planet scientists years like stars life space new star way care peopl
 
 3. **Tópicos Dominantes**:
    - **Saúde e Epidemiologia**: Reflete a importância de temas relacionados à saúde pública e doenças infecciosas.
-   - **Neurociência e Inteligência Artificial**: Indica um interesse crescente em tecnologias emergentes e suas interseções com o comportamento humano.
+   - **Neurociência e Inteligência Artificial**: Indica um interesse crescente em tecnologias e suas interseções com o comportamento humano.
    - **Astronomia e Preservação Ambiental**: Destaca a relevância de questões planetárias e exploração espacial.
 
 4. **Relação Tamanho x Tempo de Leitura**:
-   - A correlação quase linear confirma a consistência dos dados, onde textos mais extensos naturalmente demandam mais tempo de leitura.
+   - A correlação quase linear confirma a consistência dos dados, em que textos mais extensos naturalmente demandam mais tempo de leitura.
 
 5. **Palavras-Chave Frequentes**:
-   - Termos como "science", "health", "climate", "space" indicam os principais focos temáticos dos artigos, alinhando-se com as tendências atuais de pesquisa e divulgação científica.
+   - Termos como "science", "Earth", "climate", "space" indicam os principais focos temáticos dos artigos, alinhando-se com as tendências atuais de pesquisa e divulgação científica.
 
 6. **Desafios Superados**:
-   - A adaptação às estruturas variáveis das páginas e a limpeza eficaz dos dados JSON incorporados foram cruciais para garantir a integridade e a precisão dos dados coletados.
-   - A implementação de técnicas robustas de scraping e processamento de texto assegurou uma coleta eficiente, apesar das barreiras técnicas enfrentadas.
+   - A adaptação às estruturas variáveis das páginas e a limpeza eficaz dos dados JSON incorporados foram importantes para garantir a integridade e a precisão dos dados coletados.
+   - A implementação de técnicas de scraping e processamento de texto assegurou uma coleta eficiente, apesar das barreiras técnicas enfrentadas.
 
 7. **Aplicações Práticas**:
-   - **Decisões Estratégicas**: As análises fornecem uma base sólida para entender quais temas e formatos ressoam mais com o público, auxiliando na criação de conteúdo futuro.
+   - **Decisões Estratégicas**: As análises fornecem uma base sólida para entender quais temas e formatos repercutem mais entre o público, auxiliando na criação de conteúdo futuro.
    - **Melhoria de Conteúdo**: Identificar a predominância de conteúdos "easy" pode orientar a diversificação de níveis de dificuldade para atender a diferentes segmentos de leitores.
    - **Engajamento de Leitores**: Compreender a distribuição de tempo de leitura e tamanho dos textos ajuda a otimizar o engajamento, balanceando entre conteúdos rápidos e aprofundados.
 
